@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,6 +15,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        // signup intent
+        TextView signUpTextView = findViewById(R.id.sign_up_text_view_2);
+
+        signUpTextView.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent signupIntent = new Intent(getApplicationContext(),Signup.class);
+                startActivity(signupIntent);
+            }
+        });
+
+
+        // homepage intent
 
         Button login = findViewById(R.id.login_button);
         login.setOnClickListener(new View.OnClickListener() {
@@ -27,10 +44,11 @@ public class MainActivity extends AppCompatActivity {
 
                 // start a Intent
 
-                Intent startIntent = new Intent(getApplicationContext(),Homepage.class);
+                Intent homepageIntent = new Intent(getApplicationContext(),Homepage.class);
 
-                startIntent.putExtra("com.example.loginapp.Saikat" , username);
-                startActivity(startIntent);
+                homepageIntent.putExtra("com.example.loginapp.Saikat" , username);
+                startActivity(homepageIntent);
+
             }
         });
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Homepage"
-    android:background="@drawable/homepage_background"
+    android:background="#F5F5F5"
     >
 
     <TextView
@@ -14,14 +14,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="9dp"
-        android:layout_marginBottom="701dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="695dp"
         android:fontFamily="@font/robotolight"
         android:text="Explore the Universe"
         android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        />
+        android:textColor="@color/black"
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/textTwo"
@@ -29,12 +28,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="704dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginTop="343dp"
+        android:layout_marginBottom="366dp"
         android:fontFamily="@font/robotolight"
         android:text="Username"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="20dp" />
 
 </RelativeLayout>
