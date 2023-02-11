@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,12 +43,19 @@ public class MainActivity extends AppCompatActivity {
                 String username = userName.getText().toString();
                 String password_ = password.getText().toString();
 
-                // start a Intent
+                //check username password
+                if(username.isEmpty() || password_.isEmpty()){
+                    Toast.makeText(getApplicationContext(), "Error: Invalid Username or Password Entered", Toast.LENGTH_LONG).show();
+                }
 
-                Intent homepageIntent = new Intent(getApplicationContext(),Homepage.class);
+                else {
+                    // start a Intent
 
-                homepageIntent.putExtra("com.example.loginapp.Saikat" , username);
-                startActivity(homepageIntent);
+                    Intent homepageIntent = new Intent(getApplicationContext(), Homepage.class);
+
+                    homepageIntent.putExtra("com.example.loginapp.Saikat", username);
+                    startActivity(homepageIntent);
+                }
 
             }
         });
