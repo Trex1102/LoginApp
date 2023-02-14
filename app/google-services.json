@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "493713962249",
+    "project_id": "loginapp-fd3ac",
+    "storage_bucket": "loginapp-fd3ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493713962249:android:ddc4bc18378f464364cfd8",
+        "android_client_info": {
+          "package_name": "com.example.loginapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493713962249-jmevv1cr1ft9ek5l99vhdqo5d7kvff8m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.loginapp",
+            "certificate_hash": "5826edd13220051f2dc22e9a5541c8d62bf02341"
+          }
+        },
+        {
+          "client_id": "493713962249-5ttp85pq111lu37i4rrjnaif9c30b4ji.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXEnwjO5FtokaXJnnmNRxEu3LyPTGBq7A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493713962249-5ttp85pq111lu37i4rrjnaif9c30b4ji.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
