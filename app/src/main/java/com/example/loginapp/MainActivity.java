@@ -48,6 +48,10 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Error: Invalid Username or Password Entered", Toast.LENGTH_LONG).show();
                 }
 
+                else if(password_.length() < 8){
+                    Toast.makeText(getApplicationContext(), "Error: Set password with more than 8 characters", Toast.LENGTH_LONG).show();
+                }
+
                 else {
                     // start a Intent
 
